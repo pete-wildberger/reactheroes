@@ -8,14 +8,16 @@ export default class Layout extends React.Component {
     return (
       <div className="container">
         <header>
-          <Link to="/">
-            <img className="logo" src="/img/logo-judo-heroes.png"/>
+          <Link  to="/">
+            <img src="/img/heroes.jpeg"/>
           </Link>
+          <h1 className="inline">Heroes</h1>
         </header>
         <div className="row">
-        <div className="col-md-4">{this.props.children}</div>
-        <footer>Hello</footer>
+          {this.props.children}
         </div>
+        <footer>Hello</footer>
+
       </div>
     );
   }
